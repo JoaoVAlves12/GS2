@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgICS+VKNBQNGCHEKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<div class="p-4 mb-2 bg-body-tertiary rounded-3">
+			<div class="container-fluid py-5">
+				<h1 class="display-5 fw-bold">Nova Pergunta</h1>
+			</div>
+		</div>
+		<div>
+			<form action="/pergunta/novo" method="POST">
+				<div>
+					<label for="nomePessoa">Pessoa</label>
+					<input name="nomePessoa" placeholder="nome da pessoa">
+					<small>Informa qual o nome da pessoa.</small>
+				</div>
+				<div>
+					<label for="nivelGravidade">Gravidade</label>
+					<input name="urlImagem" placeholder="nível da gravidade">
+					<small>Fale aqui o nivel da gravidade do problema</small>
+				</div>
+				<div>
+					<label for="dataPostada">dataPostagem</label>
+					<input name="dataPostada" placeholder="data da postagem">
+					<small>Informe a data </small>
+				</div>
+
+				<div>
+					<label for="descricao">Descrição</label>
+					<textarea name="descricao"
+						placeholder="Adicione detalhes importantes para ajudar no problema."></textarea>
+				</div>
+				<button type="submit">Cadastrar</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
